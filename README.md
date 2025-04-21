@@ -2,6 +2,8 @@
 
 Single Page Application to demonstrate the usage of Auth0 React SDK
 
+[Live Demo](https://gvo.app/)
+
 ## Getting Started
 
 Clone the project to your machine
