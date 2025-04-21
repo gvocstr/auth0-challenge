@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react"; // Import useAuth0 hook for Auth0 session management
-import Profile from "./Profile"; // Import the Profile component
-import TestApi from "./TestApi"; // Import the TestApi component
-import { useNavigate } from "react-router-dom"; // useNavigate is used to navigate programmatically
+import Profile from "./Profile";
+import TestApi from "./TestApi";
+import { useNavigate } from "react-router-dom";
 
 function App() {
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
-  const navigate = useNavigate(); // useNavigate is used to navigate programmatically
+  const navigate = useNavigate();
 
   // State to handle mobile menu toggle
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ function App() {
           {/* Logo */}
           <div className="flex items-center space-x-4">
             <img
-              src="logo.png" // Ensure the logo image is placed correctly
+              src="logo.png"
               alt="Cruise0"
               className="h-8"
             />
@@ -46,8 +46,8 @@ function App() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  strokeLinecap="round" // Corrected to camelCase
-                  strokeLinejoin="round" // Corrected to camelCase
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h16"
                 />
